@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Souza</title>
+    <!--Importa bibliotecas externas(bootstrap, font awesome, material icons, devicons)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!--Importa bibliotecas locais-->
+    <link rel="shortcut icon" href="favicon.png"><!--Favicon-->
+    <link rel="stylesheet" href="index.css" media="screen" /><!--Estilos gerais-->
+    <link rel="stylesheet" href="assets/styles/navmenu.css" media="screen" /><!--Estilos do menu de navegação-->
+    <link rel="stylesheet" href="assets/styles/home.css" media="screen" /><!--Estilos do conteúdo inicial-->
+    <link rel="stylesheet" href="assets/styles/contact.css" media="screen" /><!--Estilos do conteúdo contatos-->
+    <link rel="stylesheet" href="assets/styles/projects.css" media="screen" /><!--Estilos dos projetos-->
+    <link rel="stylesheet" href="assets/styles/resume.css" media="screen" /><!--Estilos do resumo-->
+    <script src="src/navscript.js" defer></script><!--Script que manipula os botões de navegação-->
+    <script src="src/contact.js" defer></script><!--Script que manipula o formulário-->
+    <script src="src/getRepos.js" defer></script><!--Script que obtém e retorna os dados dos repositórios do github-->
+    <script src="src/stacks.js" defer></script><!--Script que adiciona minhas habilidades-->
+    
+</head>
+<body>  
+    <!--Menu de navegação-->
+    <nav class="navmenu">
+        <ul class="navmenu-list">
+            <li class="navmenu-item">
+                <button class="navmenu-btn active" navmenu-link>Inicio</button>
+            </li>
+            <li class="navmenu-item">
+                <button class="navmenu-btn" navmenu-link>Resumo</button>
+            </li>
+            <li class="navmenu-item">
+                <button class="navmenu-btn" navmenu-link>Projetos</button>
+            </li>
+            <li class="navmenu-item">
+                <button class="navmenu-btn" navmenu-link>Contato</button>
+            </li>
+            
+        </ul>
+    </nav>
+    <!--Cabeçalho com informações-->
+    <div class="head-profile">
+        <div class="profile-info" data-container>
+            <div id="profile-info-container">
+                <a href="https://danielsouza-portfolio.vercel.app"><img id="profile-pic" src="assets/profile-pic.png" alt="profile-pic"></a>
+                <div id="myinfos">
+                    <h1 id="myname">Daniel Souza</h1>
+                    <span id="myrole">Desenvolvedor Web</span>
+                </div>
+            </div>  
+            <!--Botão expandir/retrair-->
+            <button class="expand-more" data-expand-btn><span class="material-symbols-outlined">expand_more</span></button>
+            <div class="my-info-description">
+                <div class="separator"></div>
+                <div class="my-info-container">
+                    <!--Informações básicas-->
+                    <div class="contact-info">
+                        <p class="infos-p"><span class="material-symbols-outlined contact-icons">calendar_month</span> 13 de Abril 1999</a></p>
+                        <p class="infos-p"><a href="mailto:danielsouzat99@hotmail.com"><span class="material-symbols-outlined contact-icons">mail</span> danielsouzaT99@hotmail.com</a></p>
+                        <p class="infos-p"><a href="tel:+5555984071157"><span class="material-symbols-outlined contact-icons">smartphone</span> +55 (55) 98407-1157</a></p>
+                        <p class="infos-p"><a href="https://goo.gl/maps/H1Z4NvYzBHVtEaeo8"><span class="material-symbols-outlined contact-icons">person_pin_circle</span> Santana do Livramento - RS - Brasil</a></p>
+                    </div>
+                    <div class="separator"></div>
+                    <!--Links externos para redes sociais-->
+                    <div class="social-links">
+                        <a href="https://github.com/MrHoss"class="circular-buttons"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                            <a href="https://www.linkedin.com/in/danielsouzamh5263/" class="circular-buttons"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+                            <a href="https://www.facebook.com/daan.fsooza/" class="circular-buttons"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+                            <a href="https://www.instagram.com/danielfsouza99/" class="circular-buttons"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                            <a href="mailto:danielsouzat99@hotmail.com" class="circular-buttons"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Conteúdo do site-->
+    <div class="page-spacer">
+        <div class="article-container">
+
+            <!--Inicial-->
+            <article class="home active" data-page="inicio">
+                <div class="article-content">
+                    <h1 class="article-title">Sobre Mim</h1>
+                    <div class="article-title-underline"></div>
+                    <!--Texto Inicial-->
+                    <p>Sou estudante de Análise e Desenvolvimento de Sistemas, moro em Santana do Livramento - RS, sou apaixonado por games, tecnologia e desenvolvimento. <br>
+                        Hoje atuo como desenvolvedor web, com foco no frontend, quando vou desenvolver alguma coisa, sempre tenho em mente a facilidade e deixar o ambiente visual o mais
+                        amigável, para mim quanto mais clean o visual, melhor para o usuário final.
+                    </p>
+                    <h3>O Que Eu Faço</h3>
+                    <!--Container que organiza os cards com flexbox-->
+                    <div class="blocks-container">
+                        <!--CARD 1-->
+                        <div class="block-do">
+                            <div class="card-icon-spot card-container">
+                                <img class="f-icon" src="assets/icons/web.svg">
+                            </div>
+                            <div class="card-container">
+                                <h5 class="card-title">Desenvolvimento Web</h5>
+                                <p class="card-text">Desenvolvimento de sites de alta qualidade e desempenho à nível profissional.</p>
+                            </div>
+                        </div>
+                        <!--CARD 2-->
+                        <div class="block-do">
+                            <div class="card-icon-spot card-container">
+                                <img class="f-icon" src="assets/icons/design.svg">
+                                
+                            </div>
+                            <div class="card-container">
+                                <h5 class="card-title">Web Design</h5>
+                                <p class="card-text">Design clean, moderno e de alta qualidade.</p>
+                            </div>
+                        </div>
+                        <!--CARD 3-->
+                        <div class="block-do">
+                            <div class="card-icon-spot card-container">
+                                <img class="f-icon" src="assets/icons/graphic.svg">
+                            </div>
+                            <div class="card-container">
+                                <h5 class="card-title">Design Gráfico</h5>
+                                <p class="card-text">Criação de design de logotipos, com foco em transmitir a mensagem e a identidade do cliente.</p>
+                            </div>
+                        </div>
+                        <!--CARD 4-->
+                        <div class="block-do">
+                            <div class="card-icon-spot card-container">
+                                <img class="f-icon" src="assets/icons/mobile.svg">
+                            </div>
+                            <div class="card-container">
+                                <h5 class="card-title">Desenvolvimento Mobile</h5>
+                                <p class="card-text">Desenvolvimento de aplicativos Android.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <!--Resumo sobre minha formação, experiencia, etc-->
+            <article class="resume" data-page="resumo">
+                <div class="article-content">
+                    <h2 class="article-title">Resumo</h2>
+                    <div class="article-title-underline"></div>
+                    <div><!--Lista Educação-->
+                        <div style="display:flex;flex-wrap:wrap;">
+                            <div class="card-icon-spot title-spot" >
+                                <span class="material-symbols-outlined contact-icons res-title-icon">school</span>
+                            </div>
+                            <h5>Educação</h5>
+                        </div>
+                        <ol class="hist-list">
+                            <li class="hist-item">
+                                <h6>SENAC</h6>
+                                <p class="item-description">Montagem e Manutenção de Computadores</p>
+                                <p class="item-data">2015</p>
+                            </li>
+                            <li class="hist-item">
+                                <h6>UNINTER</h6>
+                                <p class="item-description">Análise e Desenvolvimento de Sistemas</p>
+                                <p class="item-data">2021 -- Presente</p>
+                            </li>
+                        </ol>
+                        <div style="display:flex;flex-wrap:wrap;">
+                            <div class="card-icon-spot title-spot" >
+                                <span class="material-symbols-outlined contact-icons res-title-icon">language</span>
+                            </div>
+                            <h5>Idiomas</h5>
+                        </div>
+                        <ol class="hist-list">
+                            <li class="hist-item">
+                                <h6>Inglês</h6>
+                                <p class="item-data">Avançado</p>
+                            </li>
+                            <li class="hist-item">
+                                <h6>Espanhol</h6>
+                                <p class="item-data">Intermediário</p>
+                            </li>
+                        </ol>
+
+                        <!--Lista Experiência-->
+                        <div style="display:flex;flex-wrap:wrap;">
+                            <div class="card-icon-spot title-spot" >
+                                <span class="material-symbols-outlined contact-icons res-title-icon">business_center</span>
+                            </div>
+                            <h5>Experiência</h5>
+                        </div>
+                        <ol class="hist-list">
+                            <li class="hist-item">
+                                <h6>Soluque Informática</h6>
+                                <p class="item-description">Desenvolvedor Web</p>
+                                <p class="item-data">2021 -- Presente</p>
+                                <p>Desenvolvimento e manutenção de sites e aplicativos para diversas empresas, artes gráficas, manutenção de computadores e configuração de redes e servidores em hotéis</p>
+                            </li>
+                        </ol>
+                        <!--Tags de habilidades-->
+                        <div class="skill-container">
+                        <h3>Minhas Habilidades</h3>
+                            <section class="skill-list">
+                                <!--Conteúdo adicionado pelo Script stacks.js--> 
+                            </section>
+                            <!--Barras de nível de habilidades-->
+                            <section class="progressbar-container">
+                                <!--Conteúdo adicionado pelo Script stacks.js--> 
+                            </section>
+                        </div>
+                    </div>
+                    
+                </div>
+            </article>
+
+
+            <!--Projetos que eu fiz-->
+            <article class="projects" data-page="projetos">
+                <div class="article-content">
+                    <h2 class="article-title">Projetos</h2>
+                    <div class="article-title-underline"></div>
+                    <div class="repos-container">
+                        <!--Lista de repositórios(Retorna a lista do getRepos.js)-->
+                        <ul class="repository-list"></ul>
+                        <ul id="repository-list-load">
+                            <li class="repository-load"></li>
+                            <li class="repository-load"></li>
+                            <li class="repository-load"></li>
+                            <li class="repository-load"></li>
+                        </ul> 
+                        
+                    </div>
+                </div>
+            </article>
+
+
+            <!--Informações para contato-->
+            <article class="contact" data-page="contato">
+                <div class="article-content">
+                    <h2 class="article-title">Contato</h2>
+                    <div class="article-title-underline"></div>
+                    <!--Formulário para contato-->
+                    <div class="card text-center">
+                        <div class="contact-form">
+                            <h4>Obrigado por reservar um tempo para entrar em contato comigo. Por favor, me diga em que posso ajudá-lo?</h4>
+                            <form id="contact-form" onsubmit="">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><span class="material-symbols-rounded contact-icons">person</span></span>
+                                    <input id="mailSubject" type="text" class="form-control" placeholder="Nome completo" aria-label="Username" aria-describedby="basic-addon1" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input id="mailCC1" type="text" class="form-control" placeholder="Email" aria-label="Username" required>
+                                    <span class="input-group-text contact-icons">@</span>
+                                    <input id="mailCC2" type="text" class="form-control" placeholder="domínio.com" aria-label="Server" required>
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-text"><span class="material-symbols-rounded contact-icons">chat</span></span>
+                                    <textarea id="mailMessage" class="form-control" aria-label="Mensagem" required></textarea>
+                                </div>
+                                <div>
+                                    <!--Quando escolhe um dos botões executa funções encontradas em contact.js e envia informações do formulário-->
+                                    <button type="submit" id="btn-mail" formaction="javascript:sendMail()"><span class="material-symbols-outlined">mail</span></button>
+                                    <button type="submit" id="btn-wpp" formaction="javascript:sendWpp()"><i class="fa fa-whatsapp"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    
+</body>
+</html>

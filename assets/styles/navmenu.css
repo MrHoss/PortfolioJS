@@ -1,0 +1,48 @@
+/*Estilos do menu de navegação*/
+.navmenu{
+    position: fixed;
+    bottom: 0;
+    left: 0;           
+    right: 0;
+    max-width: 700px;
+    background: #212121bd;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(12, 12, 12);
+    border-radius: 12px 12px 0 0;
+    box-shadow: var(--shadow-2);
+    z-index: 5;
+    width: 500px;      
+    margin: auto;      
+    max-width: 100%;   
+    z-index: 10000;    
+}
+.navmenu-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    margin:0;
+}
+.navmenu-item{
+    list-style-type: none;
+    margin:5px;
+}
+.navmenu-btn{
+    background-color: transparent;
+    border:0px;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.navmenu-btn:hover{
+    cursor: pointer;
+    background-color: #303030;
+}
+.navmenu-btn.active{
+    background-color: #303030;
+    
+}
+.navmenu-btn:focus {
+    background-color: #303030;
+}

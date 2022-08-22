@@ -1,0 +1,90 @@
+/*Estilo dos textos do resumo*/
+.hist-item{
+    visibility: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    position: relative;
+    margin-bottom: 20px;
+    gap:0;
+}
+.hist-item::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -33px;
+    height: 6px;
+    width: 6px;
+    background: #E95420;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #343434;
+}
+.hist-item:not(:last-child)::before {
+    margin-top: 20px;
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    width: 1px;
+    height: calc(100% + 30px);
+    background: #313131;
+}
+.title-spot{
+    margin-right: 10px;
+    margin-left: -14px;
+}
+.res-title-icon{
+    font-size:1.5rem; margin:5px;
+}
+.item-description{
+    font-weight: 300;
+    color: #777777;
+}
+.item-data{
+    color: #E95420;
+    margin-top: -15px;
+    font-weight: 300;
+}
+
+/*Estilo das tags de habilidades*/
+.skill-container{
+    z-index: 5;
+    padding: 10px;
+    margin:10px auto;
+    background-color: #212121;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid rgb(29, 29, 29);
+}
+.skill-list{
+    display:flex;
+    flex-wrap: wrap;
+}
+.skill-item{
+    background-color: #343434;
+    padding:10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+/*Estilos das barras de progresso*/
+.progressbar-container{
+    display: flex;
+
+  flex-basis: 50%;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.skill-progressbar{
+    z-index: 5;
+    padding: 2px;
+    margin:2px auto;
+    width: 450px;
+    max-width: 100%;
+}
+.progress-bar{
+    background: linear-gradient(261deg, rgb(198, 119, 29) 0%, #E95420 100%);
+    background-size: 400% 400%;
+    animation: gradientanim 1s ease infinite;
+}

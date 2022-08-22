@@ -1,0 +1,52 @@
+/*Estilos da lista de projetos dos repositorios*/
+.repository-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    list-style-type:none;
+    margin-left: -15px;
+}
+.repository{
+    z-index: 5;
+    padding: 10px;
+    margin:10px auto;
+    width: 400px;
+    background-color: #212121;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid rgb(29, 29, 29);
+}
+/* Animação de gradiente nos icones dos repositórios */
+.repository i{
+    background: linear-gradient(261deg, rgb(198, 119, 29) 0%, #E95420 100%);
+    background-size: 400% 400%;
+    animation: gradientanim 4s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#repository-list-load{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    list-style-type:none;
+    margin-left: -15px;
+}
+.repository-load{
+    z-index: 5;
+    padding: 10px;
+    margin:10px auto;
+    width: 400px;
+    background: linear-gradient(261deg, #292929 0%, #252525 100%);
+    background-size: 400% 400%;
+    animation: gradientanim 1s ease infinite;
+    border-radius: 15px;
+    
+   
+    height: 100px;
+}
