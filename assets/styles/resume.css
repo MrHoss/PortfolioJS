@@ -52,29 +52,28 @@
     z-index: 5;
     padding: 10px;
     margin:10px auto;
-    background-color: #212121;
-    border-radius: 15px;
+    background-color: #272727;
+    border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: 1px solid rgb(29, 29, 29);
+    border: 1px solid rgb(24, 24, 24);
 }
 .skill-list{
     display:flex;
     flex-wrap: wrap;
 }
 .skill-item{
-    background-color: #343434;
+    background-color: #2F2F2F;
     padding:10px;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /*Estilos das barras de progresso*/
 .progressbar-container{
     display: flex;
-
-  flex-basis: 50%;
-  flex-wrap: wrap;
-  flex: 1;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    flex: 1;
 }
 .skill-progressbar{
     z-index: 5;

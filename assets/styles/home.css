@@ -1,14 +1,21 @@
 /*Deixa o article oculto*/
 article{
     opacity: 0;
-    max-height: 0;
+    
+}
+article .article-content{
+    display:none;
 }
 
 /*Estilo para revelar o Article selecionado*/
 article.active{
     opacity: 1;
     max-height: fit-content;
-    transition: opacity 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    z-index: 10;
+}
+article.active .article-content{
+    display: block;
 }
 
 /*Titulos dos articles*/
@@ -31,10 +38,10 @@ article.active{
 .article-container{
     left: 0;           
     right: 0;
-    background: #242424;
+    background: #1D1D1D;
     /*backdrop-filter: blur(2px);*/
-    border: 1px solid rgb(12, 12, 12);
-    border-radius: 15px;
+    border: 1px solid rgb(24, 24, 24);
+    border-radius: 11px;
     z-index: 5;
     width: 1000px;      
     margin: auto;      
@@ -44,8 +51,7 @@ article.active{
     text-align: left;
     padding: 25px;
     margin-bottom: 50px;
-    max-height: fit-content; 
-    transition: all 1s ease-in-out;
+   
 }
 
 /*Cards do article inicial*/
@@ -55,15 +61,15 @@ article.active{
     justify-content: center;
 }
 .block-do{  
-    background-color: #212121;
+    background-color: #272727;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding:10px;
     margin:10px;
     width: 450px;
     max-width: 100%;
-    border: 1px solid rgb(29, 29, 29);
-    border-radius: 15px;
+    border: 1px solid rgb(24, 24, 24);
+    border-radius: 9px;
     margin-top: 10px;
 }
 .f-icon{
@@ -74,7 +80,7 @@ article.active{
     height: fit-content;
     text-align: center;
     width: fit-content;
-    border-radius: 15px;
+    border-radius: 5px;
     display: inline-block;
     background-color: #313131;
 }

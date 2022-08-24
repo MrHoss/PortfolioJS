@@ -34,7 +34,7 @@ body {
 
 /*padroniza a aparencia de todos os links e alinha spans do site*/
 a{text-decoration: none; color: white;}
-a:hover{color: #E95420;}
+a:hover{color: unset;}
 span{vertical-align: middle;}
 
 
@@ -53,6 +53,7 @@ span{vertical-align: middle;}
 }
 .page-spacer{
     padding-top: 180px;
+    
 }
 
 
@@ -60,10 +61,10 @@ span{vertical-align: middle;}
 .profile-info{
     left: 0;           
     right: 0;
-    background-color: #232323;
+    background-color: #1D1D1D;
     backdrop-filter:blur(0px);
-    border: 1px solid rgb(12, 12, 12);
-    border-radius: 15px;
+    border: 1px solid rgb(24, 24, 24);
+    border-radius: 11px;
     box-shadow: var(--shadow-2);
     z-index: 0  ;
     width: 1200px;       
@@ -85,13 +86,16 @@ span{vertical-align: middle;}
 }
 #profile-pic{
     height: 5rem;
-    border: 2px solid #E95420;
-    transition: box-shadow 0.3s ease-in-out;
+    background-color: #272727;
+    border: 1px solid #343434;
+    transition: all 0.3s ease-in-out;
     border-radius: 50%;
     display: inline-block;
 }
 #profile-pic:hover{
-    box-shadow: #E95420 0px 2px 16px 0px;
+    background-color: #343434;
+    border: 1px solid #E95420;
+    box-shadow: #343434 0px 2px 16px 0px;
 }
 #myinfos{
     margin-left: 25px;
@@ -125,10 +129,14 @@ span{vertical-align: middle;}
     box-shadow: var(--shadow-2);
     z-index: 2;
     height:30px;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+.expand-more span{
+    transition: all 0.4s ease-in-out;
 }
 .expand-more:hover{
-    background-color: #313133;
+    background-color: #2F2F2F;
 
 }
 
@@ -137,6 +145,8 @@ span{vertical-align: middle;}
 .profile-info.active, .profile-info.active .my-info-description{
     max-height: 400px;
     opacity: 1;
+}.profile-info.active .expand-more span{
+    transform: rotate(180deg);
 }
 
 /*Informações ocultas/expandivel*/
@@ -158,6 +168,11 @@ span{vertical-align: middle;}
 }
 .infos-p{
     margin-bottom: 5px;
+    border-radius: 5px;
+    padding:3px;
+}
+.infos-p:hover{
+    background-color: #2F2F2F;
 }
 .contact-info{
     flex: 1;
@@ -223,6 +238,7 @@ span{vertical-align: middle;}
 		background-position: 0% 50%;
 	}
 }
+
 /*Modificação para mobile*/
 @media (max-width:767px){
     .head-profile{

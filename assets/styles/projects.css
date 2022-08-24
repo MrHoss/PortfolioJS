@@ -14,10 +14,14 @@
     padding: 10px;
     margin:10px auto;
     width: 400px;
-    background-color: #212121;
-    border-radius: 15px;
+    background-color: #272727;
+    border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: 1px solid rgb(29, 29, 29);
+    border: 1px solid rgb(24, 24, 24);
+    transition: all 0.3s ease-in-out;
+}
+.repository:hover{
+    background-color: #2F2F2F;
 }
 /* Animação de gradiente nos icones dos repositórios */
 .repository i{
