@@ -104,6 +104,18 @@ a:hover{color: unset;}
     fill:var(--color-white);
 
 }
+@media (max-width:767px){
+    .profile-info{
+        border-radius: 0px 0px var(--radiusB) var(--radiusB);
+    }
+    /*muda comportamento do botão de expandir*/
+    .expand-more:hover{
+        background-color: var(--color-transparent);
+    }
+    .expand-more:active{
+        background-color: var(--color-activeGray);
+    }
+}
 
 :root{
     --borderWidthP:0px;
