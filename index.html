@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="assets/styles/contact.css" media="screen" /><!--Estilos do conteúdo contatos-->
     <link rel="stylesheet" href="assets/styles/projects.css" media="screen" /><!--Estilos dos projetos-->
     <link rel="stylesheet" href="assets/styles/resume.css" media="screen" /><!--Estilos do resumo-->
-    <link rel="stylesheet" href="assets/styles/theme.css" media="screen" /><!--Estilos de tema-->
+    <link class="themeconfig" rel="stylesheet" href="assets/styles/themeLight.css" media="screen" /><!--Estilos de tema-->
     <script src="src/navscript.js" defer></script><!--Script que manipula os botões de navegação-->
     <script src="src/contact.js" defer></script><!--Script que manipula o formulário-->
     <script src="src/getRepos.js" defer></script><!--Script que obtém e retorna os dados dos repositórios do github-->
     <script src="src/stacks.js" defer></script><!--Script que adiciona minhas habilidades-->
+    <script src="src/themeConfig.js" defer></script><!--Script que define o tema-->
     
 </head>
 <body>  
@@ -55,6 +56,11 @@
                 <div id="myinfos">
                     <h1 id="myname">Daniel Souza</h1>
                     <span id="myrole">Desenvolvedor Web</span>
+                </div>
+                <div id="themeset">
+                    <button><span class="material-symbols-rounded ">
+                        contrast
+                        </span></button>
                 </div>
             </div>  
             <!--Botão expandir/retrair-->

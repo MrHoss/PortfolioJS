@@ -1,0 +1,140 @@
+body,.navmenu-btn,.card input:focus, .card textarea:focus,.card button,
+.card input, .card textarea,.circular-buttons,.expand-more,a,#themeset button span{
+    color: var(--color-white);
+    text-decoration: none;
+}
+a:hover{color: unset;}
+::-webkit-scrollbar-track {
+    background: var(--color-white);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--color-attrGray);
+}
+.separator{
+    background-color: var(--color-borders);
+}
+.article-container, .profile-info,.repository,.block-do,.navmenu,.skill-container{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.navmenu-btn,.infos-p:hover,#myrole,.skill-item,.card button,.card input,.card textarea,.card .input-group,.card-icon-spot,.article-title-underline{
+    border-radius: var(--radiusP);
+}
+.skill-container,.repository,.block-do,.repository-load{
+    border-radius: var(--radiusM);
+}
+.navmenu-btn,.card button,.card-icon-spot,#myrole,.infos-p,.skill-item,.article-title-underline,#themeset button,.card,.card *{
+    border: var(--borderWidthP);
+}
+.article-container, .profile-info{
+    /*backdrop-filter: blur(2px);*/
+    /*border: 0 solid rgb(24, 24, 24);*/
+    border:var(--borderWidthP);
+    border-radius: var(--radiusB);
+    background: var(--color-backgroundDarkGray);
+    backdrop-filter:blur(0px);
+}
+#profile-pic,.circular-buttons{
+    border: var(--borderWidthS);
+}
+.hist-item::after{
+    background: var(--color-orangePrimary);
+    box-shadow: 0 0 0 4px var(--color-activeGray);
+}
+.navmenu{
+    background: var(--color-navmenubackground);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radiusM) var(--radiusM) 0 0;
+}
+.expand-more,.card,.navmenu-btn,.card button span{
+    background-color: var(--color-transparent);
+}
+#profile-pic,.repository,.block-do,.card input,.card textarea,.card .input-group,.card span,
+.card button,.skill-container,#themeset button{
+    background-color: var(--color-cardsGray);
+    transition: all 0.3s ease-in-out;
+}
+#profile-pic:hover,::-webkit-scrollbar-thumb:hover,.card button:hover,.card input:hover, .card textarea:hover,
+.expand-more:hover,.repository:hover,.navmenu-btn:hover,.contact-info a .infos-p:hover,.circular-buttons:hover,
+#themeset button:hover{
+    background-color: var(--color-hoverGray);
+}
+.card input:focus, .card textarea:focus{
+    background-color: var(--color-focusGray);
+}
+#profile-pic:active,.navmenu-btn.active,.circular-buttons:active,.card-icon-spot,.hist-item:not(:last-child)::before,
+.navmenu-btn:active,.card button:active,.repository:active,.contact-info a .infos-p:active,.expand-more:active,#myrole,
+.skill-item,#themeset button:active{
+    background-color: var(--color-activeGray);
+}
+.item-description{
+    color: var(--color-attrGray);
+}
+.article-title-underline,.progress-bar,.material-icons,.devicon-icon,.item-data{
+    background: linear-gradient(261deg, var(--color-orangeSecondary) 0%, var(--color-orangePrimary) 100%);
+    background-size: 400% 400%;
+}
+.material-icons,.devicon-icon,.item-data{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--color-transparent);
+}
+.article-title-underline,.repository-load,.progress-bar,.material-icons,.devicon-icon,.item-data{
+    animation: gradientanim 1s ease infinite;
+}
+#profile-pic:hover{
+    border: 1px solid var(--color-orangePrimary);
+    box-shadow: var(--color-hoverGray) 0px 2px 16px 0px;
+}
+.repository-load{
+    background: linear-gradient(261deg, var(--color-hoverGray) 0%, var(--color-activeGray) 100%);
+    background-size: 400% 400%;
+}
+.card input:focus, .card textarea:focus{
+    box-shadow: var(--color-orangePrimary) 0px 0px 2px, var(--color-orangeSecondary) 0px 0px 0px 2px;
+}
+#mailCC1,#mailSubject,#mailCC2,#mailMessage,.card input{
+    border:var(--borderWidthP) solid var(--color-hoverGray);
+}
+.circular-buttons,#profile-pic,#themeset button{
+    border-radius: 50%;
+}
+#mailSubject,#mailCC2,#mailMessage{border-left-width: 1px;}
+#mailCC1{border-right-width: 1px ;}
+.circular-buttons,svg{
+    fill:var(--color-white);
+
+}
+
+@media (max-width:767px){
+    .profile-info{
+        border-radius: 0px 0px var(--radiusB) var(--radiusB);
+    }
+    /*muda comportamento do botão de expandir*/
+    .expand-more:hover{
+        background-color: var(--color-transparent);
+    }
+    .expand-more:active{
+        background-color: var(--color-activeGray);
+    }
+}
+
+:root{
+    --borderWidthP:0px;
+    --borderWidthS:1px solid var(--color-borders);
+    --radiusB:20px;
+    --radiusM:15px;
+    --radiusP:8px;
+    --color-white:#111111;
+    --color-orangePrimary:#E95420;
+    --color-orangeSecondary:#C6771d;
+    --color-hoverGray:#cccccc;
+    --color-activeGray:#d6d6d6;
+    --color-focusGray:#d8d8d8;
+    --color-backgroundDarkGray:#e6e6e6f3;
+    --color-attrGray:#333333;
+    --color-borders:#a7a7a7;
+    --color-cardsGray:#f1f1f1;
+    --color-navmenubackground:#e6e6e6c7;
+    --color-transparent:#00000000;
+
+}

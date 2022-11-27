@@ -22,10 +22,14 @@ body {
 
 
 /*padroniza a aparencia de todos os links e alinha spans do site*/
-a{text-decoration: none; color: white;}
-a:hover{color: unset;}
-span{vertical-align: middle;}
 
+span{vertical-align: middle;}
+#themeset{
+    position:absolute;
+    padding: 5px;
+    right: 0;
+    top: 0;
+}
 
 /*Organiza o corpo e o cabeçalho*/
 .head-profile, .page-spacer{
@@ -94,7 +98,6 @@ span{vertical-align: middle;}
     width: 100%;
     margin: auto;
     font-size: 13px;
-    color: white;
     border: 0;
     box-shadow: var(--shadow-2);
     z-index: 2;

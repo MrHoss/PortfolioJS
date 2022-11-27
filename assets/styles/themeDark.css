@@ -1,7 +1,9 @@
 body,.navmenu-btn,.card input:focus, .card textarea:focus,.card button,
-.card input, .card textarea,.circular-buttons{
+.card input, .card textarea,.circular-buttons,.expand-more,a,#themeset button span{
     color: var(--color-white);
+    text-decoration: none;
 }
+a:hover{color: unset;}
 ::-webkit-scrollbar-track {
     background: var(--color-white);
 }
@@ -17,10 +19,10 @@ body,.navmenu-btn,.card input:focus, .card textarea:focus,.card button,
 .navmenu-btn,.infos-p:hover,#myrole,.skill-item,.card button,.card input,.card textarea,.card .input-group,.card-icon-spot,.article-title-underline{
     border-radius: var(--radiusP);
 }
-.skill-container,.repository,.block-do{
+.skill-container,.repository,.block-do,.repository-load{
     border-radius: var(--radiusM);
 }
-.navmenu-btn,.card button,.card-icon-spot,#myrole,.infos-p,.skill-item,.article-title-underline,.card,.card *{
+.navmenu-btn,.card button,.card-icon-spot,#myrole,.infos-p,.skill-item,.article-title-underline,#themeset button,.card,.card *{
     border: var(--borderWidthP);
 }
 .article-container, .profile-info{
@@ -39,7 +41,7 @@ body,.navmenu-btn,.card input:focus, .card textarea:focus,.card button,
     box-shadow: 0 0 0 4px var(--color-activeGray);
 }
 .navmenu{
-    background: #1D1D1Dbd;
+    background: var(--color-navmenubackground);
     backdrop-filter: blur(10px);
     border-radius: var(--radiusM) var(--radiusM) 0 0;
 }
@@ -47,22 +49,25 @@ body,.navmenu-btn,.card input:focus, .card textarea:focus,.card button,
     background-color: var(--color-transparent);
 }
 #profile-pic,.repository,.block-do,.card input,.card textarea,.card .input-group,.card span,
-.card button,.skill-container{
+.card button,.skill-container,#themeset button{
     background-color: var(--color-cardsGray);
     transition: all 0.3s ease-in-out;
 }
 #profile-pic:hover,::-webkit-scrollbar-thumb:hover,.card button:hover,.card input:hover, .card textarea:hover,
-.expand-more:hover,.repository:hover,.navmenu-btn:hover,.contact-info a .infos-p:hover,.circular-buttons:hover{
+.expand-more:hover,.repository:hover,.navmenu-btn:hover,.contact-info a .infos-p:hover,.circular-buttons:hover,
+#themeset button:hover{
     background-color: var(--color-hoverGray);
 }
 .card input:focus, .card textarea:focus{
     background-color: var(--color-focusGray);
 }
-#profile-pic:active,.navmenu-btn.active,.circular-buttons:active,.card-icon-spot,.hist-item:not(:last-child)::before,.navmenu-btn:active,.card button:active,.repository:active,.contact-info a .infos-p:active,.expand-more:active,#myrole,.skill-item{
+#profile-pic:active,.navmenu-btn.active,.circular-buttons:active,.card-icon-spot,.hist-item:not(:last-child)::before,
+.navmenu-btn:active,.card button:active,.repository:active,.contact-info a .infos-p:active,.expand-more:active,#myrole,
+.skill-item,#themeset button:active{
     background-color: var(--color-activeGray);
 }
 .item-description{
-    color: var(--color-focusGray);
+    color: var(--color-attrGray);
 }
 .article-title-underline,.progress-bar,.material-icons,.devicon-icon,.item-data{
     background: linear-gradient(261deg, var(--color-orangeSecondary) 0%, var(--color-orangePrimary) 100%);
@@ -80,13 +85,17 @@ body,.navmenu-btn,.card input:focus, .card textarea:focus,.card button,
     border: 1px solid var(--color-orangePrimary);
     box-shadow: var(--color-hoverGray) 0px 2px 16px 0px;
 }
+.repository-load{
+    background: linear-gradient(261deg, var(--color-hoverGray) 0%, var(--color-activeGray) 100%);
+    background-size: 400% 400%;
+}
 .card input:focus, .card textarea:focus{
     box-shadow: var(--color-orangePrimary) 0px 0px 2px, var(--color-orangeSecondary) 0px 0px 0px 2px;
 }
 #mailCC1,#mailSubject,#mailCC2,#mailMessage,.card input{
     border:var(--borderWidthP) solid var(--color-hoverGray);
 }
-.circular-buttons,#profile-pic{
+.circular-buttons,#profile-pic,#themeset button{
     border-radius: 50%;
 }
 #mailSubject,#mailCC2,#mailMessage{border-left-width: 1px;}
@@ -96,18 +105,6 @@ body,.navmenu-btn,.card input:focus, .card textarea:focus,.card button,
 
 }
 
-@media (max-width:767px){
-    .profile-info{
-        border-radius: 0px 0px var(--radiusB) var(--radiusB);
-    }
-    /*muda comportamento do botão de expandir*/
-    .expand-more:hover{
-        background-color: var(--color-transparent);
-    }
-    .expand-more:active{
-        background-color: var(--color-activeGray);
-    }
-}
 :root{
     --borderWidthP:0px;
     --borderWidthS:1px solid var(--color-borders);
@@ -124,5 +121,6 @@ body,.navmenu-btn,.card input:focus, .card textarea:focus,.card button,
     --color-attrGray:#777777;
     --color-borders:#313131;
     --color-cardsGray:#272727;
+    --color-navmenubackground:#1D1D1Dbd;
     --color-transparent:#00000000;
 }
