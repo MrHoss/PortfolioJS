@@ -1,3 +1,4 @@
+
 /*Deixa o article oculto*/
 article{
     opacity: 0;
@@ -25,12 +26,8 @@ article.active .article-content{
 
 /*Sublinhado colorido com animação dos titulos*/
 .article-title-underline{
-    background: linear-gradient(261deg, rgb(198, 119, 29) 0%, #E95420 100%);
-    background-size: 400% 400%;
-    animation: gradientanim 1s ease infinite;
     height: 4px;
     width: 40px;
-    border-radius: 10px;
     margin-bottom: 20px;
 }
 
@@ -38,20 +35,14 @@ article.active .article-content{
 .article-container{
     left: 0;           
     right: 0;
-    background: #1D1D1D;
-    /*backdrop-filter: blur(2px);*/
-    border: 1px solid rgb(24, 24, 24);
-    border-radius: 11px;
     z-index: 5;
     width: 1000px;      
     margin: auto;      
     max-width: 100%;   
     z-index: 10000;    
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     text-align: left;
     padding: 25px;
     margin-bottom: 50px;
-   
 }
 
 /*Cards do article inicial*/
@@ -61,15 +52,11 @@ article.active .article-content{
     justify-content: center;
 }
 .block-do{  
-    background-color: #272727;
     display: flex;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding:10px;
     margin:10px;
     width: 450px;
     max-width: 100%;
-    border: 1px solid rgb(24, 24, 24);
-    border-radius: 9px;
     margin-top: 10px;
 }
 .f-icon{
@@ -80,9 +67,7 @@ article.active .article-content{
     height: fit-content;
     text-align: center;
     width: fit-content;
-    border-radius: 5px;
     display: inline-block;
-    background-color: #313131;
 }
 .card-container{
     display: inline-block;

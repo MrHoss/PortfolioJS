@@ -5,11 +5,6 @@
     left: 0;           
     right: 0;
     max-width: 700px;
-    background: #1D1D1Dbd;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgb(24, 24, 24);
-    border-radius: 10px 12px 0 0;
-    box-shadow: var(--shadow-2);
     z-index: 5;
     width: 500px;      
     margin: auto;      
@@ -29,21 +24,9 @@
     margin:5px;
 }
 .navmenu-btn{
-    background-color: transparent;
-    border:0px;
-    color:white;
     padding: 10px;
-    border-radius: 5px;
     transition: all 0.1s ease-in-out;
 }
 .navmenu-btn:hover{
     cursor: pointer;
-    background-color: #323232;
-}
-.navmenu-btn.active{
-    background-color: #323232;
-    
-}
-.navmenu-btn:focus {
-    background-color: #323232;
 }

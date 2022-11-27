@@ -16,9 +16,7 @@
     left: -33px;
     height: 6px;
     width: 6px;
-    background: #E95420;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px #343434;
 }
 .hist-item:not(:last-child)::before {
     margin-top: 20px;
@@ -28,7 +26,6 @@
     left: -30px;
     width: 1px;
     height: calc(100% + 30px);
-    background: #313131;
 }
 .title-spot{
     margin-right: 10px;
@@ -39,10 +36,8 @@
 }
 .item-description{
     font-weight: 300;
-    color: #777777;
 }
 .item-data{
-    color: #E95420;
     margin-top: -15px;
     font-weight: 300;
 }
@@ -52,20 +47,14 @@
     z-index: 5;
     padding: 10px;
     margin:10px auto;
-    background-color: #272727;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: 1px solid rgb(24, 24, 24);
 }
 .skill-list{
     display:flex;
     flex-wrap: wrap;
 }
 .skill-item{
-    background-color: #2F2F2F;
     padding:10px;
     margin: 5px;
-    border-radius: 5px;
 }
 
 /*Estilos das barras de progresso*/
@@ -81,9 +70,4 @@
     margin:2px auto;
     width: 450px;
     max-width: 100%;
-}
-.progress-bar{
-    background: linear-gradient(261deg, rgb(198, 119, 29) 0%, #E95420 100%);
-    background-size: 400% 400%;
-    animation: gradientanim 1s ease infinite;
 }

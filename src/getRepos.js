@@ -38,12 +38,12 @@ const showRepositories = function(data){
 
 //Icones das linguagens dos projetos
 const devicons = {
-    JavaScript:'<i class="devicon-javascript-plain"></i> Javascript',
-    Python:'<i class="devicon-python-plain"></i> Python',
-    Java:'<i class="devicon-java-plain"></i> Java',
-    HTML:'<i class="devicon-html5-plain"></i> HTML',
-    CSS:'<i class="devicon-css3-plain"></i> CSS',
-    PHP: '<i class="devicon-php-plain"></i> PHP',
-    null: '<i class="devicon-markdown-original"></i> Markdown'
+    JavaScript:'<i class="devicon-javascript-plain devicon-icon"></i> Javascript',
+    Python:'<i class="devicon-python-plain devicon-icon"></i> Python',
+    Java:'<i class="devicon-java-plain devicon-icon"></i> Java',
+    HTML:'<i class="devicon-html5-plain devicon-icon"></i> HTML',
+    CSS:'<i class="devicon-css3-plain devicon-icon"></i> CSS',
+    PHP: '<i class="devicon-php-plain devicon-icon"></i> PHP',
+    null: '<i class="devicon-markdown-original devicon-icon"></i> Markdown'
 
 }
