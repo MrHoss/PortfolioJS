@@ -20,11 +20,11 @@ const techStack = [
     },
     {
         Language:"PHP",
-        Skill:"40%"
+        Skill:"22%"
     },
     {
         Language:"Java",
-        Skill:"50%"
+        Skill:"20%"
     },
     {
         Language:"C#",
@@ -32,11 +32,11 @@ const techStack = [
     },
     {
         Language:"ReactJS",
-        Skill:"50%"
+        Skill:"60%"
     },
     {
         Language:"NodeJS",
-        Skill:"40%"
+        Skill:"60%"
     },
     {
         Language:"Rust",
@@ -48,31 +48,31 @@ const techStack = [
     },
     {
         Language:"Flask",
-        Skill:"35%"
+        Skill:"45%"
     },
     {
         Language:"Pandas",
-        Skill:"60%"
+        Skill:"30%"
     },
     {
         Language:"MySQL",
-        Skill:"50%"
-    },
-    {
-        Language:"WordPress",
-        Skill:"80%"
-    },
-    {
-        Language:"Bootstrap",
-        Skill:"40%"
-    },
-    {
-        Language:"Photoshop",
         Skill:"60%"
     },
     {
+        Language:"WordPress",
+        Skill:"60%"
+    },
+    {
+        Language:"Bootstrap",
+        Skill:"60%"
+    },
+    {
+        Language:"Photoshop",
+        Skill:"40%"
+    },
+    {
         Language:"GIMP",
-        Skill:"70%"
+        Skill:"60%"
     },
     {
         Language:"Linux",
