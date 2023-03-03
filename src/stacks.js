@@ -87,7 +87,11 @@ const techStack = [
 
 //Função que exibe as habilidades no HTML
 const showStacks = function(data){
-    //Para cada item da lista será criado as tags 
+    
+    // Ordena a lista de habilidades pela porcentagem de habilidade
+    data.sort((a, b) => parseInt(b.Skill) - parseInt(a.Skill));
+    
+    //Para cada item da lista será criado as tags
     for(const skill of data){
         let listItem = document.createElement('span');
         listItem.classList.add('skill-item');
