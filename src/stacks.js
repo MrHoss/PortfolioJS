@@ -39,6 +39,10 @@ const techStack = [
         Skill:"40%"
     },
     {
+        Language:"Rust",
+        Skill:"15%"
+    },
+    {
         Language:"Tkinter",
         Skill:"35%"
     },
