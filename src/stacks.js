@@ -13,6 +13,9 @@ const techStack = [
     {
         Language:"JavaScript",
         Skill:"70%"
+    }, {
+        Language:"TypeScript",
+        Skill:"70%"
     },
     {
         Language:"Python",
