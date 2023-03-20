@@ -43,7 +43,11 @@ const techStack = [
     },
     {
         Language:"Rust",
-        Skill:"15%"
+        Skill:"20%"
+    }, 
+{
+        Language:"Actix-Web",
+        Skill:"10%"
     },
     {
         Language:"Tkinter",
