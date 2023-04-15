@@ -45,6 +45,7 @@ const devicons = {
     CSS:'<i class="devicon-css3-plain devicon-icon"></i> CSS',
     PHP: '<i class="devicon-php-plain devicon-icon"></i> PHP',
     Rust: '<i class="devicon-rust-plain devicon-icon"></i>',
-    null: '<i class="devicon-markdown-original devicon-icon"></i> Markdown'
+    null: '<i class="devicon-markdown-original devicon-icon"></i> Markdown',
+    undefined: ''
 
 }
