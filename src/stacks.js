@@ -23,15 +23,15 @@ const techStack = [
     },
     {
         Language:"PHP",
-        Skill:"22%"
+        Skill:"20%"
     },
     {
         Language:"Java",
-        Skill:"20%"
+        Skill:"18%"
     },
     {
         Language:"C#",
-        Skill:"20%"
+        Skill:"6%"
     },
     {
         Language:"ReactJS",
@@ -43,11 +43,11 @@ const techStack = [
     },
     {
         Language:"Rust",
-        Skill:"20%"
+        Skill:"40%"
     }, 
 {
         Language:"Actix-Web",
-        Skill:"10%"
+        Skill:"35%"
     },
     {
         Language:"Tkinter",
