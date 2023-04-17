@@ -40,6 +40,7 @@ const showRepositories = function(data){
 const devicons = {
     JavaScript:'<i class="devicon-javascript-plain devicon-icon"></i> Javascript',
     Python:'<i class="devicon-python-plain devicon-icon"></i> Python',
+    Jinja:'<i class="devicon-python-plain devicon-icon"></i> Python',
     Java:'<i class="devicon-java-plain devicon-icon"></i> Java',
     HTML:'<i class="devicon-html5-plain devicon-icon"></i> HTML',
     CSS:'<i class="devicon-css3-plain devicon-icon"></i> CSS',
