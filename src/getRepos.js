@@ -28,7 +28,7 @@ const showRepositories = function(data){
         listItem.innerHTML = `<a href=${repository.html_url}><div>
             <h5>${repository.name}</h5>
             <div class="separator"></div>
-            <span>${repository.description}</span> <br/><br/>
+            <span>${repository.description??""}</span> <br/><br/>
             <span>${devicons[repository.language]/*Adiciona o ícone da respectiva linguagem */}</span> <br /></div>
             </a>`;
         repositoryList.append(listItem);//Adiciona o conteudo do Json ao objeto do HTML
