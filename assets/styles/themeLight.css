@@ -29,7 +29,7 @@ a:hover{color: unset;}
     border:var(--borderWidthS);
     border-radius: var(--radiusB);
     background: var(--color-backgroundDarkGray);
-    backdrop-filter:blur(2px);
+    backdrop-filter:blur(0px);
 }
 #profile-pic,.circular-buttons{
     border: var(--borderWidthS);
@@ -40,7 +40,7 @@ a:hover{color: unset;}
 }
 .navmenu{
     background: var(--color-navmenubackground);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(0px);
     border-radius: var(--radiusM) var(--radiusM) 0 0;
     border: var(--borderWidthS);
     border-bottom: 0;
@@ -130,11 +130,11 @@ a:hover{color: unset;}
     --color-hoverGray:#cccccc;
     --color-activeGray:#d6d6d6;
     --color-focusGray:#d8d8d8;
-    --color-backgroundDarkGray:#e6e6e6d3;
+    --color-backgroundDarkGray:#e6e6e6e3;
     --color-attrGray:#333333;
     --color-borders:#a7a7a7;
     --color-cardsGray:#f1f1f1;
-    --color-navmenubackground:#e6e6e6c7;
+    --color-navmenubackground:#e6e6e6e3;
     --color-transparent:#00000000;
 
 }

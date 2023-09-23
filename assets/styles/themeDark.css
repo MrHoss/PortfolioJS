@@ -26,7 +26,7 @@ a:hover{color: unset;}
     border: var(--borderWidthP);
 }
 .article-container, .profile-info{
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(0px);
     
     border:var(--borderWidthS);
     border-radius: var(--radiusB);
@@ -42,7 +42,7 @@ a:hover{color: unset;}
 }
 .navmenu{
     background: var(--color-navmenubackground);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(0px);
     border-radius: var(--radiusM) var(--radiusM) 0 0;
     border: var(--borderWidthS);
     border-bottom: 0;
@@ -131,10 +131,10 @@ a:hover{color: unset;}
     --color-hoverGray:#363636;
     --color-activeGray:#414141;
     --color-focusGray:#505050;
-    --color-backgroundDarkGray:#1d1d1deb;
+    --color-backgroundDarkGray:#1d1d1df3;
     --color-attrGray:#777777;
     --color-borders:#313131;
     --color-cardsGray:#272727;
-    --color-navmenubackground:#1D1D1Dbd;
+    --color-navmenubackground:#1D1D1Df3;
     --color-transparent:#00000000;
 }
