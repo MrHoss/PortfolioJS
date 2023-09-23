@@ -12,7 +12,7 @@ const getReposJson = async function () {
         {
             name: "Solubot",
             html_url: "https://solubot.com.br",
-            description: "Projeto de multiatendimento desenvolvido em TypeScript, JavaScript, React e outras tecnologias.",
+            description: "Sistema de multiatendimento desenvolvido em TypeScript, JavaScript, React e outras tecnologias.",
             language: "TypeScript",
         },
         {
