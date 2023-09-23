@@ -30,7 +30,7 @@ Este projeto é uma página web que apresenta meu currículo, projetos, habilida
 ## Como Usar
 
 1. Clone este repositório para o seu ambiente local.
-2. Abra o arquivo `index.html` em um navegador da web para visualizar o portfólio.
+2. Abra o arquivo `index.html` em um navegador da web para visualizar o portfólio ou acesse o link https://danielsouza-porfolio.vercel.app
 
 ## Autor
 
