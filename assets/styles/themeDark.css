@@ -26,7 +26,7 @@ a:hover{color: unset;}
     border: var(--borderWidthP);
 }
 .article-container, .profile-info{
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     
     border:var(--borderWidthS);
     border-radius: var(--radiusB);
@@ -42,7 +42,7 @@ a:hover{color: unset;}
 }
 .navmenu{
     background: var(--color-navmenubackground);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     border-radius: var(--radiusM) var(--radiusM) 0 0;
     border: var(--borderWidthS);
     border-bottom: 0;
