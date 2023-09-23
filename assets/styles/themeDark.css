@@ -26,12 +26,12 @@ a:hover{color: unset;}
     border: var(--borderWidthP);
 }
 .article-container, .profile-info{
-    /*backdrop-filter: blur(2px);*/
-    /*border: 0 solid rgb(24, 24, 24);*/
-    border:var(--borderWidthP);
+    backdrop-filter: blur(5px);
+    
+    border:var(--borderWidthS);
     border-radius: var(--radiusB);
     background: var(--color-backgroundDarkGray);
-    backdrop-filter:blur(0px);
+    /* backdrop-filter:blur(0px); */
 }
 #profile-pic,.circular-buttons{
     border: var(--borderWidthS);
@@ -42,8 +42,10 @@ a:hover{color: unset;}
 }
 .navmenu{
     background: var(--color-navmenubackground);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     border-radius: var(--radiusM) var(--radiusM) 0 0;
+    border: var(--borderWidthS);
+    border-bottom: 0;
 }
 .expand-more,.card,.navmenu-btn,.card button span{
     background-color: var(--color-transparent);
@@ -124,12 +126,12 @@ a:hover{color: unset;}
     --radiusM:15px;
     --radiusP:8px;
     --color-white:#ffffff;
-    --color-orangePrimary:#E95420;
-    --color-orangeSecondary:#C6771d;
+    --color-orangePrimary:#3584E4;
+    --color-orangeSecondary:#69a7f1;
     --color-hoverGray:#363636;
     --color-activeGray:#414141;
     --color-focusGray:#505050;
-    --color-backgroundDarkGray:#1d1d1dfb;
+    --color-backgroundDarkGray:#1d1d1deb;
     --color-attrGray:#777777;
     --color-borders:#313131;
     --color-cardsGray:#272727;
