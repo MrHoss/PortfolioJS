@@ -11,13 +11,13 @@ const getReposJson = async function () {
     content.unshift(
         {
             name: "Solubot",
-            html_url: "https://solubot.com.br",
+            //html_url: "https://solubot.com.br",
             description: "Sistema de multiatendimento desenvolvido em TypeScript, JavaScript, React e outras tecnologias.",
             language: "TypeScript",
         },
         {
             name: "devAPI",
-            html_url: "https://dev.solubot.com.br/docs",
+            //html_url: "https://dev.solubot.com.br/docs",
             description: "API para integração com WhatsApp.",
             language: "JavaScript",
         },
