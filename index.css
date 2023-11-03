@@ -112,7 +112,7 @@ span{vertical-align: middle;}
 
 /*Mostra informações quando o botão de expandir é pressionado*/
 .profile-info.active, .profile-info.active .my-info-description{
-    max-height: fit-content;
+    max-height: 90vh;
     opacity: 1;
 }.profile-info.active .expand-more span{
     transform: rotate(180deg);
