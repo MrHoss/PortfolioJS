@@ -19,7 +19,7 @@ const getReposJson = async function () {
             name: "devAPI",
             html_url: "/",//"https://dev.solubot.com.br/docs",
             description: "API para integração com WhatsApp.",
-            language: "JavaScript",
+            language: "TypeScript",
         },
     );
 
