@@ -44,6 +44,9 @@ article.active .article-content{
     padding: 25px;
     margin-bottom: 50px;
 }
+.biography p{
+    font-size: 18px;
+}
 
 /*Cards do article inicial*/
 .blocks-container{

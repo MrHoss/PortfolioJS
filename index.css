@@ -30,6 +30,13 @@ span{vertical-align: middle;}
     right: 0;
     top: 0;
 }
+#themeset button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+        width: 35px
+}
 
 /*Organiza o corpo e o cabeçalho*/
 .head-profile, .page-spacer{
