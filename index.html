@@ -9,20 +9,20 @@
     <!-- Primary Meta Tags -->
     <title>Daniel Souza - Desenvolvedor Fullstack</title>
     <meta name="title" content="Daniel Souza - Desenvolvedor Fullstack">
-    <meta name="description" content="Daniel Souza: Desenvolvedor fullstack com experiências web excepcionais. Desenvolvedor fullstack de sites, aplicativos Android e Desktop com foco em acessibilidade, colaboração e excelência. Tecnologias: Node.js, React, Rust, Python e mais.">
+    <meta name="description" content="Desenvolvimento de sites, aplicativos Android e Desktop com foco em acessibilidade, colaboração e excelência. Tecnologias: Node.js, React, Rust, Python e mais.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://danielsouza-portfolio.vercel.app/">
     <meta property="og:title" content="Daniel Souza - Desenvolvedor Fullstack">
-    <meta property="og:description" content="Daniel Souza: Desenvolvedor fullstack com experiências web excepcionais. Desenvolvedor fullstack de sites, aplicativos Android e Desktop com foco em acessibilidade, colaboração e excelência. Tecnologias: Node.js, React, Rust, Python e mais.">
+    <meta property="og:description" content="Desenvolvimento de sites, aplicativos Android e Desktop com foco em acessibilidade, colaboração e excelência. Tecnologias: Node.js, React, Rust, Python e mais.">
     <meta property="og:image" content="assets/profile-pic.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://danielsouza-portfolio.vercel.app/">
     <meta property="twitter:title" content="Daniel Souza - Desenvolvedor Fullstack">
-    <meta property="twitter:description" content="Daniel Souza: Desenvolvedor fullstack com experiências web excepcionais. Desenvolvedor fullstack de sites, aplicativos Android e Desktop com foco em acessibilidade, colaboração e excelência. Tecnologias: Node.js, React, Rust, Python e mais.">
+    <meta property="twitter:description" content="Desenvolvimento de sites, aplicativos Android e Desktop com foco em acessibilidade, colaboração e excelência. Tecnologias: Node.js, React, Rust, Python e mais.">
     <meta property="twitter:image" content="assets/profile-pic.png">
 
     <!--Importa bibliotecas externas(bootstrap, font awesome, material icons, devicons)-->
@@ -56,7 +56,7 @@
 
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/Person">
     <!--Menu de navegação-->
     <nav class="navmenu">
         <ul class="navmenu-list">
@@ -83,7 +83,7 @@
                 </a>
                 <div id="myinfos">
                     <h1 id="myname">Daniel Souza</h1>
-                    <h2 id="myrole">Desenvolvedor Fullstack</h2>
+                    <h2 id="myrole" itemprop="jobTitle">Desenvolvedor Fullstack</h2>
                 </div>
                 <div id="themeset">
                     <button><span class="material-symbols-rounded" aria-label="Mudar tema">
@@ -99,33 +99,40 @@
                 <div class="my-info-container">
                     <!--Informações básicas-->
                     <div class="contact-info">
-                        <p class="infos-p"><span class="material-symbols-outlined material-icons">calendar_month</span>
-                            13 de Abril 1999</p></a>
-                        <a href="mailto:danielsouzat99@hotmail.com" aria-label='email: danielsouzat99@hotmail.com'>
-                            <p class="infos-p"><span class="material-symbols-outlined material-icons">mail</span>
-                                danielsouzaT99@hotmail.com</p>
-                        </a>
-                        <a href="tel:+5555984071157" aria-label='phone: +5555984071157'>
-                            <p class="infos-p"><span class="material-symbols-outlined material-icons">smartphone</span>
-                                +55 (55) 98407-1157</p>
-                        </a>
-                        <a href="https://goo.gl/maps/H1Z4NvYzBHVtEaeo8" aria-label='location: Santana do Livramento - RS - Brasil'>
-                            <p class="infos-p">
-                                <span class="material-symbols-outlined material-icons">person_pin_circle</span>
-                                 Santana do Livramento - RS - Brasil</p>
-                        </a>
-                        <a href="https://soluque.com.br" aria-label="company: Soluque Informática">
-                            <p class="infos-p"><span class="material-symbols-outlined material-icons">work</span>
-                                Soluque Informática</p>
-                        </a>
-                        <a
-                            href="https://secretariadigital.uninter.com/publico/documentos/diploma-digital/rvdd/1491.1491.0c00a27afeda207b9b77f77f23e85caa922dee67d5b64261ffbb5d6323f11419"
-                            aria-label="gradutation: UNINTER - Tecnólogo em Análise e Desenvolvimento de Sistemas"
-                            >
-                            <p class="infos-p"><span class="material-symbols-outlined material-icons">school</span>
-                                Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
-                        </a>
+                        <div>
+                            <p class="infos-p"><span class="material-symbols-outlined material-icons">calendar_month</span>
+                                <span itemprop="birthDate">13 de Abril 1999</span>
+                            </p>
+                            <a href="mailto:danielsouzat99@hotmail.com" aria-label='email: danielsouzat99@hotmail.com'>
+                                <p class="infos-p"><span class="material-symbols-outlined material-icons">mail</span>
+                                    <span itemprop="email">danielsouzaT99@hotmail.com</span>
+                                </p>
+                            </a>
+                            <a href="tel:+5555984071157" aria-label='phone: +5555984071157'>
+                                <p class="infos-p"><span class="material-symbols-outlined material-icons">smartphone</span>
+                                    <span itemprop="telephone">+55 (55) 98407-1157</span>
+                                </p>
+                            </a>
+                            <a href="https://goo.gl/maps/H1Z4NvYzBHVtEaeo8" aria-label='location: Santana do Livramento - RS - Brasil'>
+                                <p class="infos-p">
+                                    <span class="material-symbols-outlined material-icons">person_pin_circle</span>
+                                    <span itemprop="address">Santana do Livramento - RS - Brasil</span>
+                                </p>
+                            </a>
+                            <a href="https://soluque.com.br" aria-label="company: Soluque Informática">
+                                <p class="infos-p"><span class="material-symbols-outlined material-icons">work</span>
+                                    <span itemprop="worksFor">Soluque Informática</span>
+                                </p>
+                            </a>
+                            <a href="https://secretariadigital.uninter.com/publico/documentos/diploma-digital/rvdd/1491.1491.0c00a27afeda207b9b77f77f23e85caa922dee67d5b64261ffbb5d6323f11419"
+                                aria-label="gradutation: UNINTER - Tecnólogo em Análise e Desenvolvimento de Sistemas">
+                                <p class="infos-p"><span class="material-symbols-outlined material-icons">school</span>
+                                    <span itemprop="alumniOf">Tecnólogo em Análise e Desenvolvimento de Sistemas</span>
+                                </p>
+                            </a>
+                        </div>
                     </div>
+
                     <div class="separator"></div>
                     <!--Links externos para redes sociais-->
                     <div class="social-links">
@@ -174,7 +181,7 @@
                 <div class="article-content">
                     <h3 class="article-title">Sobre mim</h3>
                     <div class="article-title-underline"></div>
-                    <div class="biography">
+                    <div class="biography" itemprop="description">
 
                         <p>
                             Olá! Eu sou Daniel Souza, um apaixonado por transformar ideias em experiências digitais
@@ -645,11 +652,11 @@
                         </div>
                         <ol class="hist-list">
                             <li class="hist-item">
-                                <h6>Inglês</h6>
+                                <h6 itemprop="knowsLanguage">Inglês</h6>
                                 <p class="item-data">Avançado</p>
                             </li>
                             <li class="hist-item">
-                                <h6>Espanhol</h6>
+                                <h6 itemprop="knowsLanguage">Espanhol</h6>
                                 <p class="item-data">Intermediário</p>
                             </li>
                         </ol>
