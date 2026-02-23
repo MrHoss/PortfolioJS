@@ -42,32 +42,60 @@
     font-weight: 300;
 }
 
-/*Estilo das tags de habilidades*/
-.skill-container{
+/* Container geral das tags de habilidades */
+.stack-container {
     z-index: 5;
     padding: 10px;
-    margin:10px auto;
-}
-.skill-list{
-    display:flex;
-    flex-wrap: wrap;
-}
-.skill-item{
-    padding:10px;
-    margin: 5px;
+    margin: 10px auto;
 }
 
-/*Estilos das barras de progresso*/
-.progressbar-container{
-    display: flex;
-    flex-basis: 50%;
-    flex-wrap: wrap;
-    flex: 1;
+/* Lista de tags tipo "tijolinho" */
+.stack-list {
+    column-count: 2; /* 2 colunas */
+    gap: 5px;
 }
-.skill-progressbar{
-    z-index: 5;
+
+/* Título da categoria */
+.stack-category-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.stack-category-container{
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+/* Container das barras de progresso */
+.progressbar-container {
+    column-count: 2; /* 2 colunas */
+    column-gap: 10px;
+}
+
+.stack-progressbar {
+    display: inline-block;
+    width: 100%;
     padding: 2px;
-    margin:2px auto;
-    width: 450px;
-    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Barra de progresso em si */
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-hoverGray);
+    font-weight: bold;
+}
+
+@media (max-width:767px){
+    .stack-list {
+        column-count: 1; /* 1 coluna em telas menores */
+    }
+    .progressbar-container {
+        column-count: 1; /* 1 coluna em telas menores */
+    }
 }

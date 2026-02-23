@@ -1,36 +1,82 @@
-/*Estilos da lista de projetos dos repositorios*/
-.repository-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
+/* Lista de projetos */
+.repository-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 10px;
     width: 100%;
-    left: 0;
-    right: 0;
-    list-style-type:none;
-    margin-left: -15px;
-}
-.repository{
-    z-index: 5;
-    padding: 10px;
-    margin:10px auto;
-    width: 400px;
-    transition: all 0.3s ease-in-out;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
 }
 
-#repository-list-load{
+/* Cards de repositório */
+.repository {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--color-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.repository:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.repository-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.repository-content {
+  flex: 1; /* Ocupa todo espaço disponível, empurra footer para baixo */
+}
+
+.repository-footer {
+  display: flex;
+  justify-content: flex-start; /* ou center, se preferir centralizado */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.repository-icon {
+  font-size: 0.8rem;
+  color: var(--color-primary);
+}
+/* Lista de carregamento de repositórios */
+#repository-list-load {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px; /* espaço entre os cards de loading */
     width: 100%;
-    left: 0;
-    right: 0;
-    list-style-type:none;
-    margin-left: -15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
 }
-.repository-load{
+
+.repository-load {
     z-index: 5;
-    padding: 10px;
-    margin:10px auto;
-    width: 400px;
+    padding: 8px;
+    margin: 0;
+    min-width: 300px;
+    max-width: 400px;
     height: 100px;
+    flex: 1 1 auto;
+}
+
+@media (max-width:767px){
+    .repository-list {
+        grid-template-columns: 1fr; /* 1 coluna em telas menores */
+    }
+    .repository-load {
+        max-width: 100%;
+    }
 }

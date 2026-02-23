@@ -10,21 +10,21 @@ const getReposJson = async function () {
   // Adicione os projetos diretamente ao objeto content
   content.unshift(
     {
-      name: "CorpERP - backend",
-      html_url: null,//"https://solubot.com.br",
-      description: "Sistema de ERP desenvolvido em Python, DRF e outras tecnologias.",
+      name: "CorpERP - Backend",
+      html_url: null, // "https://corpsystem.com.br"
+      description: "Sistema ERP desenvolvido em Python e Django REST Framework (DRF). Atualmente estou trabalhando na manutenção, correção de bugs e otimização de endpoints críticos, refatorando código e ajustando a arquitetura para melhorar performance e escalabilidade.",
       language: "Python",
     },
     {
       name: "Solubot",
-      html_url: null,//"https://solubot.com.br",
-      description: "Sistema de multiatendimento desenvolvido em TypeScript, JavaScript, React e outras tecnologias.",
+      html_url: null, // "https://solubot.com.br"
+      description: "Plataforma de multiatendimento desenvolvida com TypeScript, JavaScript e React. Integração com diversas APIs e automação de fluxos de atendimento para agilizar processos internos e melhorar a experiência do cliente.",
       language: "TypeScript",
     },
     {
       name: "devAPI",
-      html_url: null,//"https://dev.solubot.com.br/docs",
-      description: "API para integração com WhatsApp.",
+      html_url: null, // "https://dev.solubot.com.br/docs"
+      description: "API de integração com WhatsApp desenvolvida em TypeScript, permitindo envio e recebimento de mensagens de forma escalável e segura, com endpoints documentados para fácil integração.",
       language: "TypeScript",
     },
   );
@@ -44,18 +44,31 @@ getReposJson();
 // Apresentação dos dados do JSON no HTML
 const showRepositories = function (data) {
   for (const repository of data) {
-    loadingModel.style.display = 'none'; // Oculta o elemento de carregamento após o retorno do JSON
+    loadingModel.style.display = 'none'; // Oculta o loading
+
     let listItem = document.createElement('li');
     listItem.classList.add('repository');
-    listItem.innerHTML = `${repository.html_url?`<a href=${repository.html_url}>`:''}<div>
-            <h5>${repository.name}</h5>
-            <div class="separator"></div>
-            <span>${repository.description ?? ""}</span> <br/><br/>
-            <span>${devicons[repository.language]/*Adiciona o ícone da respectiva linguagem */}</span> <br /></div>
-            </a>`;
-    repositoryList.append(listItem); // Adiciona o conteúdo do JSON ao objeto do HTML
+    if (!repository.html_url) listItem.classList.add('repository-nolink');
+
+    let linkStart = repository.html_url ? `<a href="${repository.html_url}" class="repository-link">` : '';
+    let linkEnd = repository.html_url ? `</a>` : '';
+
+    listItem.innerHTML = `
+        ${linkStart}
+        <div class="repository-content">
+          <h5>${repository.name}</h5>
+          <div class="separator"></div>
+          <p>${repository.description??""}</p>
+        </div>
+        <div class="repository-footer">
+          <span class="repository-icon">${devicons[repository.language]}</span>
+        </div>
+        ${linkEnd}
+    `;
+
+    repositoryList.append(listItem);
   }
-}
+};
 
 // Ícones das linguagens dos projetos
 const devicons = {
