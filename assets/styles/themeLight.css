@@ -135,6 +135,9 @@ a:hover{color: unset;}
     .expand-more:active{
         background-color: var(--color-activeGray);
     }
+    :root{
+        --blur: 3px;
+    }
 }
 
 :root{
