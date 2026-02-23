@@ -41,8 +41,8 @@ const techStack = {
     { name: "Panels (aaPanel, cPanel)", years: 3 },
     { name: "GIT", years: 4.6 },
     { name: "PM2", years: 3 },
-    { name: "Linux", years: 13 },
-    { name: "Windows", years: 20 },
+    { name: "Linux", years: 11 },
+    { name: "Windows", years: 15 },
     { name: "Databases (MySQL, PostgreSQL, MongoDB, SQLite)", years: 5 },
   ]
 };
