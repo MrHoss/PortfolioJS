@@ -61,7 +61,7 @@ const showStacks = function (data) {
     categoryContainer.classList.add('stack-category-container');
 
     // Título da categoria
-    const categoryTitle = document.createElement('h4');
+    const categoryTitle = document.createElement('h5');
     categoryTitle.classList.add('stack-category-title');
     categoryTitle.innerText = category;
     categoryContainer.append(categoryTitle);
